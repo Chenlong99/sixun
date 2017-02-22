@@ -24,7 +24,7 @@ public class ManagerSupplyDemandServlet extends ManagerBaseServlet {
 		String method = request.getParameter("method");
 		System.out.println(method);
 		if ("list".equals(method)) {
-
+			
 			getUserRecord();
 			getByPage(request);
 			to = request.getRequestDispatcher("/sys/supplyDemand/supplyDemandList.jsp");
@@ -49,7 +49,7 @@ public class ManagerSupplyDemandServlet extends ManagerBaseServlet {
 			// 使用分页pageNow 使用条件realName userName
 			String pageNow = request.getParameter("pageNow");
 			String pageCount = request.getParameter("pageCount");
-			String userName = request.getParameter("userName");
+			String supplyDemand = request.getParameter("supplyDemand");
 			// 判断realName 和 userName 是否需要保存到session "name" ""
 			HttpSession session = request.getSession();
 
@@ -63,15 +63,15 @@ public class ManagerSupplyDemandServlet extends ManagerBaseServlet {
 				System.out.println("pageCount" + pageCount);
 			}
 
-			if (userName == null) {
+			if (supplyDemand == null) {
 
-				userName = (String) session.getAttribute("userName");
-				System.out.println("userName" + userName);
+				supplyDemand = (String) session.getAttribute("supplyDemand");
+				System.out.println("supplyDemand" + supplyDemand);
 			} else {
-				session.setAttribute("userName", userName);
+				session.setAttribute("supplyDemand", supplyDemand);
 			}
 
-			PageBean<SupplyDemand> pb = supplyDemandService.list(pageNow, userName);
+			PageBean<SupplyDemand> pb = supplyDemandService.list(pageNow, supplyDemand);
 			request.setAttribute("pb", pb);
 
 			System.out.println("----------------分页结果--------------------");

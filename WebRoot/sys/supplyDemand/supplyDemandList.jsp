@@ -28,7 +28,7 @@ contentType="text/html; charset=UTF-8"%>
 	</div>
 	<!-- 过滤条件 -->
 	<div id="QueryArea">
-		<form action="${pageContext.request.contextPath }/servlet/managerSupplyDemand" method="post">
+		<form action="${path}/servlet/managerSupplyDemand" method="post">
 			<input type="hidden" name="method" value="list">
 			<input type="text" name="supplyDemand" placeholder="请输入供应或需求查询" title="请输入供应或需求查询">
 			<input type="submit" value="搜索">
@@ -88,7 +88,5 @@ contentType="text/html; charset=UTF-8"%>
 			}条记录; 当前${requestScope.pb.pageNow }/${requestScope.pb.totalPages }页
 		</div>
 			</div>
-		</div>
-	</div>
 </body>
 </html>

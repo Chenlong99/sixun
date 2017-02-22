@@ -113,7 +113,7 @@ body {
 					href="${path }/servlet/managerGuestComment?method=list&message=">留言板</a>
 				</li>
 				<li class="level2 level2Style"><a target="right"
-					href="${path}/servlet/managerSupplyDemand?method=list">创业支持</a>
+					href="${path}/servlet/managerSupplyDemand?method=list&supplyDemand=">创业支持</a>
 				</li>
 			</ul>
 		</li>

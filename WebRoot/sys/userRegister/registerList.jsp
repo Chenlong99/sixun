@@ -50,6 +50,7 @@
 					<td>确认密码</td>
 					<td>电话</td>
 					<td>邮箱</td>
+					<td>操作</td>
 				</tr>
 			</thead>
 			<!--显示数据列表 -->
@@ -64,9 +65,9 @@
 								<td>${userList.userPwdAgain}&nbsp;</td>
 								<td>${userList.phone}&nbsp;</td>
 								<td>${userList.eMail}&nbsp;</td>
-								<td><a
+								<td><%-- <a
 									href="${path}/servlet/managerUserRegister?method=findById&id=${userList.id}"
-									class="FunctionButton">更新</a> <a
+									class="FunctionButton">更新</a> --%> <a
 									href="${path}/servlet/managerUserRegister?method=delete&id=${userList.id}"
 									onClick="return delConfirm();" class="FunctionButton">删除</a>
 								</td>
@@ -83,15 +84,12 @@
 		</table>
 		<!-- 其他功能超链接 -->
 		<div id="TableTail" align="center">
-			<div class="FunctionButton">
-				<a href="${path }/sys/food/saveFood.jsp">添加</a>
-			</div>
-			<a href="${path }/servlet/managerUserRegister?method=list">首页</a> <a
-				href="${path }/servlet/managerUserRegister?method=list&pageNow=${requestScope.pb.pageNow-1}">上一页</a>
+			<a href="${path}/servlet/managerUserRegister?method=list">首页</a> <a
+				href="${path}/servlet/managerUserRegister?method=list&pageNow=${requestScope.pb.pageNow-1}">上一页</a>
 			<a
-				href="${path }/servlet/managerUserRegister?method=list&pageNow=${requestScope.pb.pageNow+1}">下一页</a>
+				href="${path}/servlet/managerUserRegister?method=list&pageNow=${requestScope.pb.pageNow+1}">下一页</a>
 			<a
-				href="${path }/servlet/managerUserRegister?method=list&pageNow=${requestScope.pb.totalPages}">末页</a>
+				href="${path}/servlet/managerUserRegister?method=list&pageNow=${requestScope.pb.totalPages}">末页</a>
 			总共${requestScope.pb.totalRows }条记录;每页显示${requestScope.pb.pageCount
 			}条记录; 当前${requestScope.pb.pageNow }/${requestScope.pb.totalPages }页
 		</div>

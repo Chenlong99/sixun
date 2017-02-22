@@ -11,7 +11,6 @@ import javax.servlet.http.HttpSession;
 
 import org.apache.commons.beanutils.BeanUtils;
 
-import com.sixun.entity.UserRecord;
 import com.sixun.entity.UserRegister;
 import com.sixun.page.PageBean;
 import com.sixun.service.impl.UserRegisterServiceImpl;
@@ -33,27 +32,7 @@ public class ManagerUserRegisterServlet extends ManagerBaseServlet {
 		// 获取表单提交过来的url携带的参数
 		String method = request.getParameter("method");
 			
-		if ("register".equals(method)) {
-			// 用户注册信息添加
-			UserRegister userRegister = copyToBean(request, UserRegister.class);
-			
-			System.out.println("注册成功"+userRegister);
-			// 重定向
-			if (!userRegisterService.add(userRegister)) {
-				throw new RuntimeException("添加信息失败");
-			}
-			request.setAttribute("userRegister", userRegister);
-			request.getRequestDispatcher("/App/denglu/login.jsp").forward(request, response);
-		} else if ("update".equals(method)) {
-				
-			UserRegister userRegister =copyToBean(request, UserRegister.class);
-			System.out.println("修改userRecord：" + userRegister);
-			if (!userRegisterService.update(userRegister)) {
-					
-				throw new RuntimeException("修改信息失败");
-			}
-			
-		} else if ("delete".equals(method)) {
+		 if ("delete".equals(method)) {
 			// 删除
 			String id = request.getParameter("id");
 			userRegisterService.delete(id);
