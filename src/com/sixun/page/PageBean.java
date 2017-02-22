@@ -7,19 +7,19 @@ import java.util.List;
  * @param <T>
  */
 
-public class PageBean<T>{
-
+public class PageBean<T>{	
+	
 	private int pageNow = 1;
 	private int pageCount = 6;
 	private int totalRows;
 	private int totalPages;//totalRows   pageCount
 	private List<T> datas;
-	private Condition condition;//条件对象
+	private String condition;//条件对象
 	
-	public Condition getCondition() {
+	public String getCondition() {
 		return condition;
 	}
-	public void setCondition(Condition condition) {
+	public void setCondition(String condition) {
 		this.condition = condition;
 	}
 	public int getPageNow() {

@@ -1,4 +1,4 @@
-﻿<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"
+﻿  <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"
 	contentType="text/html; charset=UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%-- 声明动态获取项目路径 --%>
@@ -60,7 +60,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<a class="navbar-brand" href="index.jsp" ><!--<img src="images/logo.png" alt=""/>--><span id="x1">思迅人才网</span></a>
 	        <ul class="nav navbar-nav">
 						<li><a href="index.jsp">首页</a></li>
-
+				
 		        <li class="dropdown">
 		        	<a href="zhaopinxinxi.jsp">招聘信息</a>
 		        </li>
@@ -69,18 +69,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		            
 		        </li>
 		        <li class="dropdown">
-		            <a href="#" class="dropdown-toggle" data-toggle="dropdown">就业服务<b class="caret"></b></a>
+		            <a href="#" class="dropdown-toggle" data-toggle="dropdown">就业及创业<b class="caret"></b></a>
 		            <ul class="dropdown-menu">
-			            <li><a href="jiuye.jsp">就业信息</a></li>
-			            <li><a href="zuozong.jsp">就业指导</a></li>
+			            <li><a href="chuangyezhichi.jsp">创业支持</a></li>
+			            <li><a href="zuozong.jsp">就业规划</a></li>
 			            <!-- <li><a href="jobs.jsp">模拟就业</a></li> -->
-			            <li><a href="dangan.jsp">学籍档案</a></li>
 			            <!-- <li><a href="jobs.jsp">常见问题</a></li> -->
 			            
 		            </ul>
 		        </li>
 						<li class="dropdown">
-								<a href="chuangyezhichi.jsp" class="dropdown-toggle">创业支持</a>
+								<a href="dangan.jsp" class="dropdown-toggle">学籍档案</a>
 								
 						</li>
 		        <li><a href="lianxiwomen.jsp">联系我们</a></li>

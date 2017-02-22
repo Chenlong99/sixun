@@ -43,15 +43,15 @@
 			<div class="loginbox-title">
 				<h3>登录</h3>
 			</div>
-			<form id="signupForm" action="????" mothed="post">
+			<form id="signupForm" action="${path}/servlet/login?method=login" mothed="post">
 			<div class="login-error"></div>
 			<div class="row">
 				<!-- <label class="field">用户名</label> -->
-				<input type="text" class="input-text-user input-click" required="required" name="email" id="email" placeholder="用户名">
+				<input type="text" class="input-text-user input-click" required="required" value="${user.userName }" name="userName" id="email" placeholder="用户名">
 			</div>
 			<div class="row">
 				<!-- <label class="field">密码</label> -->
-				<input type="password" class="input-text-password input-click" required="required" name="password" id="password" placeholder="密码">
+				<input type="password" class="input-text-password input-click" required="required" value="${user.userPwd }" name="userPwd" id="password" placeholder="密码">
 			</div>
 			<div class="row btnArea">
 				<input class="login-btn" type="submit" name="" value="登陆">

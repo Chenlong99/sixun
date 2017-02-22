@@ -49,7 +49,7 @@
 				<div class="loginbox-title">
 					<h3>注册</h3>
 				</div>
-				<form id="signupForm" action="${path}/servlet/user?method=add" method="post"
+				<form id="signupForm" action="${path}/servlet/register?method=register" method="post"
 					onsubmit="return checkForm()">
 					<div class="login-error"></div>
 					<div class="row" id="typel">
@@ -58,19 +58,19 @@
 					</div>
 					<div class="row">
 						<input type="text" value="" required="required"
-							class="input-text-user noPic input-click" name="username" id="name"
+							class="input-text-user noPic input-click" name="userName" id="name"
 							placeholder="用户名">
 					</div>
 					<div class="row">
 						<input type="password" value="" required="required"
-							class="input-text-password noPic input-click" name="password"
+							class="input-text-password noPic input-click" name="userPwd"
 							id="pwd" onblur="checkPass()" placeholder="密码"> <span
 							id="passId"></span>
 					</div>
 					<div class="row">
 						<input type="password" value="" required="required"
 							class="input-text-password noPic input-click"
-							name="passwordAgain" id="ensurepwd" onblur="ensurepass()"
+							name="userPwdAgain" id="ensurepwd" onblur="ensurepass()"
 							placeholder="确认密码"> <span id="ensure"></span>
 					</div>
 					<div class="row">
@@ -81,9 +81,9 @@
 					</div>
 					<div class="row">
 						<input type="email" value="" required="required"
-							class="input-text-user noPic input-click" name="email" id="email"
+							class="input-text-user noPic input-click" name="eMail" id="email"
 							placeholder="邮箱">
-
+						
 					</div>
 					<!-- <div class="row">
 				<label class="field" for="tel">公司电话</label>
@@ -106,7 +106,7 @@
 				</form>
 			</div>
 			<div class="go-regist">
-				已有帐号,请<a href="login.jsp" class="link">登录</a>
+				已有帐号,请 <a href="login.jsp" class="link">登录</a>
 			</div>
 		</div>
 

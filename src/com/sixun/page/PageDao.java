@@ -1,4 +1,7 @@
 package com.sixun.page;
+
+import java.util.List;
+
 /**
  * ·ÖÒ³·½·¨
  * @author Administrator
@@ -17,6 +20,6 @@ public interface PageDao<T>{
 	 *   
 	 *   PageBean
 	 */
-	public void getByPage(PageBean<T> pb);
+	public List<T> getByPage(PageBean<T> pb,String parameter);
 	
 }

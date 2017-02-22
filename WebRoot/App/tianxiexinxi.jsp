@@ -100,7 +100,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="single">
 			<div class="form-container">
 				<h2>信息录入</h2>
-				<form action="${path}/servlet/news?method=add" method="post" enctype="multipart/form-data">
+				<form action="${path}/servlet/userRecord?method=add" method="post" enctype="multipart/form-data">
 					<div class="row">
 						<div class="form-group col-md-12">
 							<label class="col-md-3 control-lable" for="photo" style="position: relative;left: 15%">头像：</label>

@@ -51,17 +51,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		        	<a href="peixunkecheng.jsp">技能培训</a>
 		        </li>
 		        <li class="dropdown">
-		            <a href="#" class="dropdown-toggle" data-toggle="dropdown">就业服务<b class="caret"></b></a>
+		            <a href="#" class="dropdown-toggle" data-toggle="dropdown">就业及创业<b class="caret"></b></a>
 		            <ul class="dropdown-menu">
-			            <li><a href="jiuye.jsp">就业信息</a></li>
-			            <li><a href="zuozong.jsp">就业指导</a></li>
+			                <li><a href="chuangyezhichi.jsp">创业支持</a></li>
+			            <li><a href="zuozong.jsp">就业规划</a></li>
 			            <!-- <li><a href="jobs.jsp">模拟就业</a></li> -->
-			            <li><a href="dangan.jsp">学籍档案</a></li>
 			            <!-- <li><a href="jobs.jsp">常见问题</a></li> -->
 		            </ul>
 		        </li>
 		        <li class="dropdown">
-		            <a href="chuangyezhichi.jsp" class="dropdown-toggle">创业支持</a> 
+		            <a href="dangan.jsp" class="dropdown-toggle">学籍档案</a> 
 		        </li>
 		        <li><a href="lianxiwomen.jsp">联系我们</a></li>
 		        
@@ -172,7 +171,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<td>E-mail</td>
 					<td><a href="mailto:example@example.com">example@example.com</a></td>
 				</tr>
-
+					
 				<tr>
 					<td>Website</td>
 					<td><a href="#">example.com</a></td>
@@ -191,13 +190,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<li><a href="#">5</a></li> -->
 		<li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
 	</ul><br><br>
-	<form style="width: 80%">
+	<form style="width: 80%" action="????" method="post">
 			<div class="to">
-             	<input type="text" class="text" value="姓名" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '姓名';}">
-			 	<input type="text" class="text" value="供应&需求" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '供应&需求';}" style="margin-left:3%">
+             	<input type="text" class="text" placeholder="姓名"   name="userName"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '姓名';}">
+             	<input type="text" class="text" placeholder="联系电话"   name="phone"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '联系电话';}">
+             	<input type="text" class="text" placeholder="邮箱" name="eMail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '邮箱';}">
+			 	<input type="text" class="text" placeholder="供应&需求" name="supplyDemand"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '供应&需求';}" >
 			</div>
 			<div class="text">
-               <textarea value="描述" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '描述';}">描述</textarea>
+              	 <textarea placeholder="描述"   name="description" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '描述';}">描述</textarea>
             </div>
             <div class="form-submit1">
 	           <input type="submit" id="submit" value="提交"><br>

@@ -19,7 +19,7 @@ public class PageUtils {
 	
 	static QueryRunner runner = JdbcUtils.getQueryRunner();
 	
-	public static <T> void getByPages(PageBean<T> pb,Class<T> t,String sql,String condition){
+	public static <T> List<T> getByPages(PageBean<T> pb,Class<T> t,String sql,String condition){
 		String byPage = " LIMIT ?,?";
 		
 		//查询总记录数  totalRows----------totalPages有值
@@ -42,11 +42,14 @@ public class PageUtils {
 		try {
 			List<T> datas = runner.query(sql, new BeanListHandler<T>(t),start,pb.getPageCount());
 			pb.setDatas(datas);
+			return datas;
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-	}
 
+	 return null;
+	}
+	
 	//返回总记录数
 	public static int getToTalRows(String condition) {
 		String sql = "SELECT COUNT(*) FROM ";

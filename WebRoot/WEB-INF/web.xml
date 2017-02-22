@@ -1,44 +1,146 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app version="2.5" 
-	xmlns="http://java.sun.com/xml/ns/javaee" 
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
 	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
-  <display-name></display-name>
-  <servlet>
-    <description>This is the description of my J2EE component</description>
-    <display-name>This is the display name of my J2EE component</display-name>
-    <servlet-name>NewsServlet</servlet-name>
-    <servlet-class>com.sixun.servlet.NewsServlet</servlet-class>
-  </servlet>
-  <servlet>
-    <description>This is the description of my J2EE component</description>
-    <display-name>This is the display name of my J2EE component</display-name>
-    <servlet-name>UserServlet</servlet-name>
-    <servlet-class>com.sixun.servlet.UserServlet</servlet-class>
-  </servlet>
-  <servlet>
-    <description>This is the description of my J2EE component</description>
-    <display-name>This is the display name of my J2EE component</display-name>
-    <servlet-name>BaseServlet</servlet-name>
-    <servlet-class>com.sixun.servlet.BaseServlet</servlet-class>
-  </servlet>
+	<display-name></display-name>
+	<!-- 配置管理员servlet -->
+	<servlet>
+		<servlet-name>ManagerBaseServlet</servlet-name>
+		<servlet-class>com.sixun.web.managerServlet.ManagerBaseServlet</servlet-class>
+	</servlet>
+	<servlet>
+	<!-- 配置游客留言servlet -->
+		<servlet-name>ManagerGuestCommentServlet</servlet-name>
+		<servlet-class>com.sixun.web.managerServlet.ManagerGuestCommentServlet</servlet-class>
+	</servlet>
+	<servlet>
+	<!-- 配置登陆退出servlet -->
+		<servlet-name>ManagerLoginOutServlet</servlet-name>
+		<servlet-class>com.sixun.web.managerServlet.ManagerLoginOutServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<!-- 配置登陆 -->
+		<servlet-name>ManagerLoginServlet</servlet-name>
+		<servlet-class>com.sixun.web.managerServlet.ManagerLoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+	<!-- 配置创业支持 供应需求 -->
+		<servlet-name>ManagerSupplyDemandServlet</servlet-name>
+		<servlet-class>com.sixun.web.managerServlet.ManagerSupplyDemandServlet</servlet-class>
+	</servlet>
+	<servlet>
+	<!-- 配置档案 -->
+		<servlet-name>ManagerUserRecordServlet</servlet-name>
+		<servlet-class>com.sixun.web.managerServlet.ManagerUserRecordServlet</servlet-class>
+	</servlet>
+	<servlet>
+  <!-- 配置用户注册 -->
+		<servlet-name>ManagerUserRegisterServlet</servlet-name>
+		<servlet-class>com.sixun.web.managerServlet.ManagerUserRegisterServlet</servlet-class>
+	</servlet>
+  
+  
+  <!-- 配置用户信息servlet -->
+	<servlet>
+		<servlet-name>UserBaseServlet</servlet-name>
+		<servlet-class>com.sixun.web.userServlet.UserBaseServlet</servlet-class>
+	</servlet>
+	<servlet>
+	<!--留言信息 -->
+		<servlet-name>UserGuestCommentServlet</servlet-name>
+		<servlet-class>com.sixun.web.userServlet.UserGuestCommentServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<!-- 用户退出登陆 -->
+		<servlet-name>UserLoginOutServlet</servlet-name>
+		<servlet-class>com.sixun.web.userServlet.UserLoginOutServlet</servlet-class>
+	</servlet>
 
+	<servlet>
+	<!-- 用户登陆 -->
+		<servlet-name>UserLoginServlet</servlet-name>
+		<servlet-class>com.sixun.web.userServlet.UserLoginServlet</servlet-class>
+	</servlet>
+	<servlet>
+	<!-- 用户档案 -->
+		<servlet-name>UserRecordServlet</servlet-name>
+		<servlet-class>com.sixun.web.userServlet.UserRecordServlet</servlet-class>
+	</servlet>
+	<servlet>
+	<!-- 用户注册 -->
+		<servlet-name>UserRegisterServlet</servlet-name>
+		<servlet-class>com.sixun.web.userServlet.UserRegisterServlet</servlet-class>
+	</servlet>
+	<servlet>
+	<!-- 创业支持 供应需求 -->
+		<servlet-name>UserSupplyDemandServlet</servlet-name>
+		<servlet-class>com.sixun.web.userServlet.UserRegisterServlet</servlet-class>
+	</servlet>
 
-  <servlet-mapping>
-    <servlet-name>NewsServlet</servlet-name>
-    <url-pattern>/servlet/news</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>UserServlet</servlet-name>
-    <url-pattern>/servlet/user</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>BaseServlet</servlet-name>
-    <url-pattern>/servlet/base</url-pattern>
-  </servlet-mapping>
+	<!-- 配置管理员url -->
+	<servlet-mapping>
+		<servlet-name>ManagerBaseServlet</servlet-name>
+		<url-pattern>/servlet/managerBase</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ManagerGuestCommentServlet</servlet-name>
+		<url-pattern>/servlet/managerGuestComment</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ManagerLoginOutServlet</servlet-name>
+		<url-pattern>/servlet/managerLoginOut</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ManagerLoginServlet</servlet-name>
+		<url-pattern>/servlet/managerLogin</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ManagerSupplyDemandServlet</servlet-name>
+		<url-pattern>/servlet/managerSupplyDemand</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ManagerUserRecordServlet</servlet-name>
+		<url-pattern>/servlet/managerUserRecord</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ManagerUserRegisterServlet</servlet-name>
+		<url-pattern>/servlet/managerUserRegister</url-pattern>
+	</servlet-mapping>
 	
-  <welcome-file-list>
-    <welcome-file>index.jsp</welcome-file>
-  </welcome-file-list>
+	
+	<!-- 配置用户url -->
+	<servlet-mapping>
+		<servlet-name>UserBaseServlet</servlet-name>
+		<url-pattern>/servlet/userBase</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserGuestCommentServlet</servlet-name>
+		<url-pattern>/servlet/userGuestComment</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserLoginOutServlet</servlet-name>
+		<url-pattern>/servlet/userLoginOut</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserLoginServlet</servlet-name>
+		<url-pattern>/servlet/userLogin</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserRecordServlet</servlet-name>
+		<url-pattern>/servlet/userRecord</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserRegisterServlet</servlet-name>
+		<url-pattern>/servlet/userRegister</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserSupplyDemandServlet</servlet-name>
+		<url-pattern>/servlet/userSupplyDemand</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
 </web-app>

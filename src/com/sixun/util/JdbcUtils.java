@@ -10,9 +10,11 @@ public class JdbcUtils {
 	
 	private static ComboPooledDataSource dataSource;
 	static{
+		
 		dataSource= new ComboPooledDataSource();
 	}
    public static QueryRunner getQueryRunner(){
+	   
 	   return new QueryRunner(dataSource);
    }
    public static Connection getConnection(){

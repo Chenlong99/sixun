@@ -205,28 +205,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<a href="#"><i class="fa fa-instagram fa1"> </i></a> -->
 		</div>
 		<div class="col-md-3 team-member text-center">
-			<a href=""><img src="images/f8.jpg" class="img-responsive img-circle1" alt=""/></a>
+			<a href="peixunkecheng/new_1.jsp "><img src="images/f8.jpg" class="img-responsive img-circle1" alt=""/></a>
 			<h5>Java</h5>
 			<h6>工程师</h6>
 			<p>Java软件工程师是指运用Java这种开发语言去完成软件产品的软件程序设计、开发、测试、维护升级等工作的人员。</p>
 			<a href="#">我要报名 </a>
 		</div>
 		<div class="col-md-3 team-member text-center">
-		    <a href=""><img src="images/f10.jpg" class="img-responsive img-circle1" alt=""/></a>
+		    <a href="peixunkecheng/new_2.jsp"><img src="images/f10.jpg" class="img-responsive img-circle1" alt=""/></a>
 			<h5>WEB前端</h5>
 			<h6>工程师</h6>
 			<p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScript等各种Web技术进行客户端产品的开发。完成客户端程序（也就是浏览器端）的开发，开发JavaScript以及Flash模块，同时结合后台开发技术模拟整体效果，进行丰富互联网的Web开发，致力于通过技术改善用户体验。</p>
 			<a href="#">我要报名 </a>
 		</div>
-		<div class="col-md-3 team-member text-center">
-	        <a href=""><img src="images/f7.jpg" class="img-responsive img-circle1" alt=""/></a>
-			<h5>嵌入式</h5>
-			<h6>工程师</h6>
-			<p>嵌入式工程师是指具有C/C++语言、汇编语言等基础等做嵌入式系统设计和开发，包括硬件系统的建立和相关软件开发、移植、调试等工作。</p>
-			<a href="#">我要报名 </a>
-		</div>
-		<div class="clearfix"> </div>
-	</div>
 </div>
 <div class="footer_bottom">	
   <div class="container">
